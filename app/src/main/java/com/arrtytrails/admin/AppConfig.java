@@ -17,7 +17,7 @@ public final class AppConfig {
 
     // Must match PUSH_SECRET in BACKEND_UPLOAD_TO_WEBSITE/admin_push/config.php.
     // This is only a device-registration secret, not your admin password.
-    public static final String PUSH_DEVICE_SECRET = "CHANGE_THIS_RANDOM_SECRET_32_CHARS";
+    public static final String PUSH_DEVICE_SECRET = "ArrtyTrailPush_1615_2026_Secure_Key_Change";
 
     public static final String[] ALLOWED_HOSTS = new String[] {
         "arrtytrails.site",

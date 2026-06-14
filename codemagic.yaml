@@ -10,18 +10,15 @@ workflows:
         script: |
           ls -la
           ls -la app
+          test -f app/google-services.json && echo "google-services.json OK"
 
       - name: Set Android SDK location
         script: |
           echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
 
-      - name: Make Gradle executable
-        script: |
-          chmod +x ./gradlew
-
       - name: Build Debug APK
         script: |
-          ./gradlew assembleDebug --stacktrace
+          gradle assembleDebug --stacktrace
 
     artifacts:
       - app/build/outputs/**/*.apk

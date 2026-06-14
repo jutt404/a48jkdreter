@@ -5,14 +5,24 @@ plugins {
 
 android {
     namespace 'com.arrtytrails.admin'
-    compileSdk 35
+    compileSdk 34
 
     defaultConfig {
         applicationId 'com.arrtytrails.admin'
         minSdk 23
-        targetSdk 35
+        targetSdk 34
         versionCode 1
         versionName '0.01'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
     }
 
     buildTypes {

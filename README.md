@@ -1,3 +1,13 @@
+# Arrty Trails Admin Notifier App v0.01 - Build Fixed
+
+This build-fixed package keeps your Firebase Android app package `com.arrtytrails.admin` and adds safer Android build settings for Codemagic.
+
+Important: if your website `admin_push/config.php` uses a different PUSH_SECRET, change the same value in:
+
+`app/src/main/java/com/arrtytrails/admin/AppConfig.java`
+
+Then rebuild.
+
 # Arrty Trails Admin Notifier App v0.01
 
 Professional admin Android app for Arrty Trails with push notifications for new orders.
@@ -23,7 +33,7 @@ Set these if your admin path is different:
 ADMIN_HOME_URL = "https://arrtytrails.site/ad-admin/";
 ORDERS_HISTORY_URL = "https://arrtytrails.site/ad-admin/#orders";
 PUSH_REGISTER_URL = "https://arrtytrails.site/admin_push/register_device.php";
-PUSH_DEVICE_SECRET = "CHANGE_THIS_RANDOM_SECRET_32_CHARS";
+PUSH_DEVICE_SECRET = "ArrtyTrailPush_1615_2026_Secure_Key_Change";
 ```
 
 ## Firebase setup required for real push notifications

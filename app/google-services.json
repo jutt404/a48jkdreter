@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "000000000000",
-    "project_id": "replace-with-your-firebase-project-id",
-    "storage_bucket": "replace-with-your-firebase-project-id.appspot.com"
+    "project_number": "114083555557",
+    "firebase_url": "https://wahidzamman-5a83f-default-rtdb.firebaseio.com",
+    "project_id": "wahidzamman-5a83f",
+    "storage_bucket": "wahidzamman-5a83f.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:000000000000:android:0000000000000000000000",
+        "mobilesdk_app_id": "1:114083555557:android:a02289d4c44a10eeed4c0c",
         "android_client_info": {
           "package_name": "com.arrtytrails.admin"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "REPLACE_WITH_FIREBASE_ANDROID_API_KEY"
+          "current_key": "AIzaSyCn65MA-5EVHQpw3i4YQCeS5H5F7dvyVMs"
         }
       ],
       "services": {

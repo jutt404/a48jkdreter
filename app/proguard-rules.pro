@@ -1,0 +1,3 @@
+-keep class com.google.firebase.messaging.** { *; }
+-keep class com.google.firebase.iid.** { *; }
+-keep class com.arrtytrails.admin.** { *; }

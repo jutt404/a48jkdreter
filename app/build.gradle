@@ -1,0 +1,34 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.arrtytrails.admin'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.arrtytrails.admin'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '0.01'
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable false
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+    implementation 'com.google.firebase:firebase-messaging'
+}

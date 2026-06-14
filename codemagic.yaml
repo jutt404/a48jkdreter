@@ -1,0 +1,27 @@
+workflows:
+  arrty-admin-notifier-debug:
+    name: Arrty Trails Admin Notifier APK
+    max_build_duration: 60
+    environment:
+      java: 17
+
+    scripts:
+      - name: Show project files
+        script: |
+          ls -la
+          ls -la app
+
+      - name: Set Android SDK location
+        script: |
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
+
+      - name: Make Gradle executable
+        script: |
+          chmod +x ./gradlew
+
+      - name: Build Debug APK
+        script: |
+          ./gradlew assembleDebug --stacktrace
+
+    artifacts:
+      - app/build/outputs/**/*.apk

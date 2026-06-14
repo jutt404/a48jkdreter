@@ -1,0 +1,7 @@
+Safe structure notes:
+- No database password in Android app.
+- No MySQL config in Android app.
+- No Firebase service account in Android app.
+- Firebase service account stays only on your website server.
+- Admin notification body avoids address/phone for privacy.
+- Change PUSH_SECRET before final build.

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Arrty Trails Admin</string>
+    <string name="default_notification_channel_id">arrty_admin_orders</string>
+</resources>
